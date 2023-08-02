@@ -23,12 +23,12 @@ function App() {
 
   return (
     <div className="container" style={{ "box-shadow": `inset 0 0 5px 3px ${color === "white" ? "none" : color}` }}>
-      <div onMouseEnter={() => setIsActive(!isActive)} onMouseLeave={() => setIsActive(!isActive)}>
 
-        <div className="heading">
-          <h1>Should you use a dropdown?
-          </h1>
-        </div>
+      <div className="heading">
+        <h1>Should you use a dropdown?
+        </h1>
+      </div>
+      <div style={{"width":"360px"}} onMouseEnter={() => setIsActive(!isActive)} onMouseLeave={() => setIsActive(!isActive)}>
 
         <div className="select-btn" style={{ "border": `1px solid ${color}` }}>
 
