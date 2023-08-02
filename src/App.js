@@ -32,14 +32,13 @@ function App() {
 
         <div className="select-btn" style={{ "border": `1px solid ${color}` }}>
 
-          <div><h2
-            style={{ "color": `${color}` }}>{color === "cyan" ? "Yes" : color === "red" ? "Probably not" : "Select"}
-          </h2>
+          <div >
+            <h2 style={{ "color": `${color}` }}>{color === "cyan" ? "Yes" : color === "red" ? "Probably not" : "Select"}</h2>
           </div>
 
           <div>{isActive
-            ? <i class="bi bi-caret-up"></i>
-            : <i class="bi bi-caret-down"></i>}
+            ? <i style={{ "color": `${color}` }} class="bi bi-caret-up"></i>
+            : <i style={{ "color": `${color}` }} class="bi bi-caret-down"></i>}
           </div>
 
         </div>
